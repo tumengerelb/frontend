@@ -3,7 +3,6 @@ import ReactMapboxGl from 'react-mapbox-gl';
 import { useSelector } from 'react-redux';
 import { createStyles, WithStyles, withStyles } from '@material-ui/core';
 
-import Boundaries from './Boundaries';
 import Layers from './Layers';
 import Legends from './Legends';
 import DateSelector from './DateSelector';
@@ -44,7 +43,6 @@ function MapView({ classes }: MapViewProps) {
           width: '100vw',
         }}
       >
-        <Boundaries />
         <Layers layers={layers} selectedDate={startDate} />
       </MapboxMap>
       <DateSelector availableDates={selectedLayerDates} />

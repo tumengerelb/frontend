@@ -1,0 +1,675 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200511.230020.28292.0.001.json",
+    "dumpEventTime": "2020-05-11T23:00:20Z",
+    "dumpEventTimeStamp": "1589209220645",
+    "processId": 28292,
+    "threadId": null,
+    "cwd": "/Users/mgxc2za/Documents/GitHub/prism-frontend",
+    "commandLine": [
+      "/usr/local/bin/node",
+      "--max-old-space-size=2048",
+      "/Users/mgxc2za/Documents/GitHub/prism-frontend/node_modules/fork-ts-checker-webpack-plugin/lib/service.js"
+    ],
+    "nodejsVersion": "v12.16.2",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "12.16.2",
+      "v8": "7.8.279.23-node.34",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1e",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "19.4.0",
+    "osVersion": "Darwin Kernel Version 19.4.0: Wed Mar  4 22:28:40 PST 2020; root:xnu-6153.101.6~15/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 27250330,
+        "nice": 0,
+        "sys": 19194510,
+        "idle": 180985380,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 2271030,
+        "nice": 0,
+        "sys": 2912390,
+        "idle": 222230560,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 23541730,
+        "nice": 0,
+        "sys": 13885240,
+        "idle": 189993140,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 2208740,
+        "nice": 0,
+        "sys": 2237920,
+        "idle": 222966210,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 20622360,
+        "nice": 0,
+        "sys": 10757460,
+        "idle": 196037650,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 2258120,
+        "nice": 0,
+        "sys": 1980380,
+        "idle": 223173270,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 18323220,
+        "nice": 0,
+        "sys": 8919080,
+        "idle": 200172800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz",
+        "speed": 2500,
+        "user": 2345900,
+        "nice": 0,
+        "sys": 1848720,
+        "idle": 223216050,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "34:36:3b:ca:10:6e",
+        "address": "fe80::1464:43f3:d6d3:305d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "34:36:3b:ca:10:6e",
+        "address": "192.168.88.228",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "aa:a1:4c:89:11:cd",
+        "address": "fe80::a8a1:4cff:fe89:11cd",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 9
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "aa:a1:4c:89:11:cd",
+        "address": "fe80::a8a1:4cff:fe89:11cd",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 10
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::4cd9:b652:88ce:651f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::bc9d:58b3:47c8:b66",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "utun2",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::bd28:417a:8cf3:fd7f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 13
+      }
+    ],
+    "host": "mgxc2zaMac.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00000001001636d3",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100084d5a",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100186477",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100186417",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x00000001003141c5",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000100315a3a",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010031246c",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010031026e",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010031c13a",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetry(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010031c1c1",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x00000001002e9dfa",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010063f028",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000010097d5b9",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/usr/local/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2151522304,
+    "totalCommittedMemory": 2149912408,
+    "usedMemory": 2138296504,
+    "availableMemory": 48370328,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33088,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 1063056,
+        "capacity": 1047456,
+        "used": 17576,
+        "available": 1029880
+      },
+      "old_space": {
+        "memorySize": 1862148096,
+        "committedMemory": 1862070160,
+        "capacity": 1852128272,
+        "used": 1852128272,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 2527232,
+        "committedMemory": 2479456,
+        "capacity": 2251232,
+        "used": 2251232,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 831640,
+        "capacity": 607920,
+        "used": 607920,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 283385856,
+        "committedMemory": 283385856,
+        "capacity": 283255912,
+        "used": 283255912,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 384.499,
+    "kernelCpuSeconds": 642.614,
+    "cpuConsumptionPercent": 5.96154,
+    "maxRss": 2367927877632,
+    "pageFaults": {
+      "IORequired": 22,
+      "IONotRequired": 2019363
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "npm_package_lint_staged_src_______js_jsx_ts_tsx__0": "yarn run lint --fix",
+    "npm_package_dependencies__fortawesome_fontawesome_svg_core": "^1.2.28",
+    "npm_package_dependencies__reduxjs_toolkit": "^1.2.5",
+    "npm_package_dependencies__typescript_eslint_eslint_plugin": "^2.23.0",
+    "npm_package_dependencies_redux": "^4.0.5",
+    "TERM_PROGRAM": "vscode",
+    "NODE": "/usr/local/bin/node",
+    "npm_config_version_git_tag": "true",
+    "npm_package_scripts_deploy_staging": "firebase deploy --only hosting:staging-target",
+    "npm_package_dependencies_moment": "^2.24.0",
+    "INIT_CWD": "/Users/mgxc2za/Documents/GitHub/prism-frontend",
+    "npm_package_dependencies_eslint": "^6.8.0",
+    "SHELL": "/bin/zsh",
+    "TERM": "xterm-256color",
+    "npm_package_dependencies__types_react_datepicker": "^2.11.0",
+    "npm_package_dependencies_url": "^0.11.0",
+    "TMPDIR": "/var/folders/fy/x4njdmjx5g187_l1qk1pphyw0000gn/T/",
+    "npm_config_init_license": "MIT",
+    "npm_package_scripts_lint": "eslint --ext .js,.jsx,.ts,.tsx ./src --ignore-path .gitignore",
+    "TERM_PROGRAM_VERSION": "1.45.0",
+    "npm_package_dependencies_immutable": "^4.0.0-rc.12",
+    "npm_package_scripts_predeploy_prod": "yarn build",
+    "npm_package_jest_snapshotSerializers_0": "enzyme-to-json/serializer",
+    "npm_package_dependencies_enzyme": "^3.11.0",
+    "npm_package_dependencies_eslint_plugin_fp": "^2.3.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_package_private": "true",
+    "npm_package_dependencies_lint_staged": "^10.0.8",
+    "npm_package_dependencies_react_dom": "^16.13.0",
+    "npm_package_dependencies_eslint_config_airbnb": "^18.0.1",
+    "npm_package_readmeFilename": "README.md",
+    "npm_config_python": "/usr/bin/python",
+    "npm_package_description": "This project is the front-end interface for the World Food Programme's [PRISM project](https://innovation.wfp.org/project/prism). It displays data, forecasts, and impact projections on a configurable map interface.",
+    "USER": "mgxc2za",
+    "npm_package_dependencies_mapbox_gl": "^1.8.1",
+    "npm_package_license": "MIT",
+    "npm_package_dependencies__testing_library_user_event": "^7.1.2",
+    "npm_package_dependencies_eslint_config_react_app": "^5.2.0",
+    "npm_package_dependencies_redux_async_initial_state": "^0.3.0",
+    "npm_package_browserslist_development_1": "last 1 firefox version",
+    "npm_package_dependencies__testing_library_dom": "^6.15.0",
+    "npm_package_browserslist_development_0": "last 1 chrome version",
+    "npm_package_dependencies_lodash": "^4.17.15",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.ilJntwqAni/Listeners",
+    "npm_package_browserslist_development_2": "last 1 safari version",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+    "npm_package_husky_hooks_pre_commit": "lint-staged",
+    "npm_package_dependencies__types_react_redux": "^7.1.7",
+    "npm_package_dependencies_prettier": "^1.19.1",
+    "npm_execpath": "/usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js",
+    "npm_package_dependencies__fortawesome_react_fontawesome": "^0.1.9",
+    "npm_package_dependencies_react_redux": "^7.2.0",
+    "npm_package_dependencies__fortawesome_free_brands_svg_icons": "^5.13.0",
+    "npm_package_dependencies_enzyme_to_json": "^3.4.4",
+    "npm_package_dependencies_prop_types": "^15.7.2",
+    "npm_package_dependencies__fortawesome_free_solid_svg_icons": "^5.13.0",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"start\"]}",
+    "PATH": "/var/folders/fy/x4njdmjx5g187_l1qk1pphyw0000gn/T/yarn--1589179092065-0.24210152799504958:/Users/mgxc2za/Documents/GitHub/prism-frontend/node_modules/.bin:/Users/mgxc2za/.config/yarn/link/node_modules/.bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Library/Frameworks/Python.framework/Versions/2.7/bin",
+    "npm_package_dependencies__material_ui_core": "^4.9.5",
+    "npm_package_dependencies_eslint_config_prettier": "^6.10.0",
+    "_": "/Users/mgxc2za/Documents/GitHub/prism-frontend/node_modules/.bin/react-scripts",
+    "npm_package_dependencies__types_jest": "^24.0.0",
+    "npm_package_dependencies_typescript": "^3.8.3",
+    "npm_package_browserslist_production_1": "not dead",
+    "npm_package_browserslist_production_0": ">0.2%",
+    "PWD": "/Users/mgxc2za/Documents/GitHub/prism-frontend",
+    "npm_package_browserslist_production_2": "not op_mini all",
+    "npm_lifecycle_event": "start",
+    "npm_package_name": "prism-frontend",
+    "LANG": "en_US.UTF-8",
+    "npm_config_version_commit_hooks": "true",
+    "npm_package_scripts_start": "EXTEND_ESLINT=true react-scripts start",
+    "npm_package_scripts_build": "EXTEND_ESLINT=true react-scripts build",
+    "npm_package_dependencies_eslint_plugin_prettier": "^3.1.2",
+    "npm_package_dependencies_react_router_dom": "^5.1.2",
+    "XPC_FLAGS": "0x0",
+    "EXTEND_ESLINT": "true",
+    "npm_config_bin_links": "true",
+    "npm_package_dependencies_eslint_plugin_react": "^7.19.0",
+    "npm_package_dependencies_react_mapbox_gl": "^4.8.2",
+    "npm_package_version": "0.1.0",
+    "XPC_SERVICE_NAME": "0",
+    "npm_package_devDependencies_eslint_import_resolver_typescript": "^2.0.0",
+    "HOME": "/Users/mgxc2za",
+    "SHLVL": "2",
+    "npm_package_scripts_test": "react-scripts test",
+    "VSCODE_GIT_ASKPASS_MAIN": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js",
+    "npm_config_strict_ssl": "true",
+    "npm_config_save_prefix": "^",
+    "npm_package_dependencies__types_mapbox_gl": "^1.8.0",
+    "npm_config_version_git_message": "v%s",
+    "npm_package_dependencies__testing_library_jest_dom": "^4.2.4",
+    "npm_package_dependencies_eslint_plugin_import": "^2.20.1",
+    "npm_package_dependencies_babel_eslint": "10.0.3",
+    "npm_package_dependencies_eslint_plugin_jsx_a11y": "^6.2.3",
+    "NPM_CONFIG_PYTHON": "/usr/bin/python",
+    "npm_package_scripts_predeploy_staging": "yarn build",
+    "npm_package_dependencies__types_node": "^12.0.0",
+    "npm_package_dependencies__typescript_eslint_parser": "^2.25.0",
+    "npm_package_dependencies_react_scripts": "3.4.0",
+    "YARN_WRAP_OUTPUT": "false",
+    "LOGNAME": "mgxc2za",
+    "npm_package_dependencies__types_react_router_dom": "^5.1.3",
+    "npm_lifecycle_script": "EXTEND_ESLINT=true react-scripts start",
+    "PREFIX": "/usr/local",
+    "npm_package_dependencies_enzyme_adapter_react_16": "^1.15.2",
+    "VSCODE_GIT_IPC_HANDLE": "/var/folders/fy/x4njdmjx5g187_l1qk1pphyw0000gn/T/vscode-git-b9916067f6.sock",
+    "npm_package_dependencies_react": "^16.13.0",
+    "npm_package_dependencies__types_react": "^16.9.0",
+    "npm_config_user_agent": "yarn/1.22.4 npm/? node/v12.16.2 darwin x64",
+    "npm_config_ignore_scripts": "",
+    "npm_config_version_git_sign": "",
+    "npm_package_dependencies__testing_library_react": "^9.3.2",
+    "npm_package_dependencies__types_lodash": "^4.14.149",
+    "npm_package_dependencies_eslint_plugin_react_hooks": "^1.7",
+    "GIT_ASKPASS": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
+    "VSCODE_GIT_ASKPASS_NODE": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Renderer).app/Contents/MacOS/Code Helper (Renderer)",
+    "npm_package_dependencies_xml_js": "^1.6.11",
+    "npm_package_dependencies_eslint_plugin_flowtype": "^3.0",
+    "npm_package_dependencies_react_datepicker": "^2.14.1",
+    "npm_config_ignore_optional": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_package_scripts_deploy_prod": "firebase deploy --only hosting:prod-target",
+    "npm_package_scripts_eject": "react-scripts eject",
+    "npm_package_scripts_precommit": "lint-staged",
+    "npm_package_dependencies__types_react_dom": "^16.9.0",
+    "npm_config_version_tag_prefix": "v",
+    "npm_package_dependencies__material_ui_icons": "^4.9.1",
+    "npm_package_dependencies_husky": "^4.2.3",
+    "npm_node_execpath": "/usr/local/bin/node",
+    "COLORTERM": "truecolor",
+    "BABEL_ENV": "development",
+    "NODE_ENV": "development",
+    "REACT_APP_MAPBOX_TOKEN": "pk.eyJ1IjoidHVtZW5nZXJlbCIsImEiOiJjazk5bnlkMzEwNTBoM2ttbnIwY2pkNGZhIn0.fEraBi-O1z-zAirR8glo0Q",
+    "NODE_PATH": "",
+    "WEBPACK_DEV_SERVER": "true",
+    "TYPESCRIPT_PATH": "/Users/mgxc2za/Documents/GitHub/prism-frontend/node_modules/typescript/lib/typescript.js",
+    "TSCONFIG": "/Users/mgxc2za/Documents/GitHub/prism-frontend/tsconfig.json",
+    "COMPILER_OPTIONS": "{}",
+    "TSLINT": "",
+    "CONTEXT": "/Users/mgxc2za/Documents/GitHub/prism-frontend",
+    "TSLINTAUTOFIX": "false",
+    "ESLINT": "false",
+    "ESLINT_OPTIONS": "{}",
+    "WATCH": "",
+    "WORK_DIVISION": "1",
+    "MEMORY_LIMIT": "2048",
+    "CHECK_SYNTACTIC_ERRORS": "true",
+    "USE_INCREMENTAL_API": "true",
+    "VUE": "{\"compiler\":\"vue-template-compiler\",\"enabled\":false}"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 24576,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 2784,
+      "hard": 4176
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/usr/local/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib",
+    "/Users/mgxc2za/Documents/GitHub/prism-frontend/node_modules/fork-ts-checker-webpack-plugin/node_modules/fsevents/fsevents.node",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices",
+    "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/FSEvents",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices",
+    "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SharedFileList.framework/Versions/A/SharedFileList",
+    "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+    "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+    "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration",
+    "/System/Library/Frameworks/Security.framework/Versions/A/Security",
+    "/usr/lib/libsqlite3.dylib",
+    "/usr/lib/libxml2.2.dylib",
+    "/usr/lib/libnetwork.dylib",
+    "/usr/lib/libapple_nghttp2.dylib",
+    "/usr/lib/libauto.dylib",
+    "/usr/lib/libcompression.dylib",
+    "/System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration",
+    "/usr/lib/libarchive.2.dylib",
+    "/usr/lib/liblangid.dylib",
+    "/usr/lib/libCRFSuite.dylib",
+    "/usr/lib/liblzma.5.dylib",
+    "/usr/lib/libenergytrace.dylib",
+    "/usr/lib/libbsm.0.dylib",
+    "/usr/lib/system/libkxld.dylib",
+    "/System/Library/PrivateFrameworks/AppleFSCompression.framework/Versions/A/AppleFSCompression",
+    "/usr/lib/libcoretls.dylib",
+    "/usr/lib/libcoretls_cfhelpers.dylib",
+    "/usr/lib/libpam.2.dylib",
+    "/usr/lib/libxar.1.dylib",
+    "/usr/lib/libbz2.1.0.dylib",
+    "/usr/lib/libiconv.2.dylib",
+    "/usr/lib/libcharset.1.dylib",
+    "/usr/lib/libpcap.A.dylib",
+    "/System/Library/Frameworks/NetFS.framework/Versions/A/NetFS",
+    "/System/Library/PrivateFrameworks/NetAuth.framework/Versions/A/NetAuth",
+    "/System/Library/PrivateFrameworks/login.framework/Versions/A/Frameworks/loginsupport.framework/Versions/A/loginsupport",
+    "/System/Library/PrivateFrameworks/TCC.framework/Versions/A/TCC",
+    "/System/Library/PrivateFrameworks/CoreNLP.framework/Versions/A/CoreNLP",
+    "/System/Library/PrivateFrameworks/MetadataUtilities.framework/Versions/A/MetadataUtilities",
+    "/usr/lib/libmecabra.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate",
+    "/usr/lib/libmecab.dylib",
+    "/usr/lib/libgermantok.dylib",
+    "/usr/lib/libThaiTokenizer.dylib",
+    "/usr/lib/libChineseTokenizer.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLinearAlgebra.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libSparseBLAS.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libQuadrature.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBNNS.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libSparse.dylib",
+    "/System/Library/PrivateFrameworks/LanguageModeling.framework/Versions/A/LanguageModeling",
+    "/System/Library/PrivateFrameworks/CoreEmoji.framework/Versions/A/CoreEmoji",
+    "/System/Library/PrivateFrameworks/LinguisticData.framework/Versions/A/LinguisticData",
+    "/System/Library/PrivateFrameworks/Lexicon.framework/Versions/A/Lexicon",
+    "/usr/lib/libcmph.dylib",
+    "/System/Library/Frameworks/OpenDirectory.framework/Versions/A/Frameworks/CFOpenDirectory.framework/Versions/A/CFOpenDirectory",
+    "/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory",
+    "/System/Library/PrivateFrameworks/APFS.framework/Versions/A/APFS",
+    "/System/Library/Frameworks/SecurityFoundation.framework/Versions/A/SecurityFoundation",
+    "/usr/lib/libutil.dylib",
+    "/System/Library/PrivateFrameworks/CoreServicesStore.framework/Versions/A/CoreServicesStore",
+    "/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement",
+    "/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Versions/A/BackgroundTaskManagement",
+    "/usr/lib/libxslt.1.dylib"
+  ]
+}
