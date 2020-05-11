@@ -26,7 +26,6 @@ function MapView({ classes }: MapViewProps) {
       serverLayer ? serverAvailableDates.get(serverLayer) : undefined,
     )
     .filter(value => value) as AvailableDates;
-
   const { startDate } = useSelector(dateRangeSelector);
 
   const {

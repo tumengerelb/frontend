@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import moment from 'moment';
 import { Source, Layer } from 'react-mapbox-gl';
-
+import Nso from '../Nso';
 import { formatServerUri } from '../../../utils/server-utils';
-import { LayersMap } from '../../../config/types';
+import { LayersMap, LayerType } from '../../../config/types';
 
 const commonQueryParam = {
   version: '1.1.1',
@@ -18,12 +18,20 @@ const commonQueryParam = {
   srs: 'EPSG:3857',
   bbox: '{bbox-epsg-3857}',
 };
-
 function Layers({ layers, selectedDate }: LayersProps) {
   if (!layers) {
     return null;
   }
-
+  const lastLayer = layers.last() as LayerType;
+  if (lastLayer) {
+    const { id } = lastLayer;
+    switch (id) {
+      case 'nso':
+        return <Nso />;
+      default:
+        console.log(id);
+    }
+  }
   const queryParam = {
     ...commonQueryParam,
     ...(selectedDate && {

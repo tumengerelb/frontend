@@ -14,13 +14,12 @@
   },
   "categories": {
     "baseline": {
-      "baseline": ["population_below_poverty", "population_total"]
+      "baseline": ["population_below_poverty", "population_total", "nso"]
     },
     "climate": {
       "drought_indicators": ["pasture_anomaly", "ndvi", "ModisLST", "ModisVHI"],
       "dzud_risk": ["DzudRiskMap", "ModisSnowPercentage"]
     },
-    "impact": {
-    }
+    "impact": {}
   }
 }

@@ -115,5 +115,11 @@
       { "value": "20001", "color": "#B0E2FF" },
       { "value": "30000", "color": "#FFFFFF" }
     ]
+  },
+  "nso": {
+    "title": "test",
+    "server_type": "geojson",
+    "server_uri": "",
+    "has_date": false
   }
 }
