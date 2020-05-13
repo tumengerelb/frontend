@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import moment from 'moment';
 import { Source, Layer } from 'react-mapbox-gl';
-import Boundaries from '../Boundaries';
+import fodder from '../../../utils/fodder';
 import { formatServerUri } from '../../../utils/server-utils';
 import { LayersMap, LayerType } from '../../../config/types';
 
@@ -27,7 +27,8 @@ function Layers({ layers, selectedDate }: LayersProps) {
     const { id } = lastLayer;
     switch (id) {
       case 'nso':
-        return <Boundaries />;
+        fodder();
+        break;
       default:
         console.log(id);
     }
