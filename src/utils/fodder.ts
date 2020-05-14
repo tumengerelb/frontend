@@ -4,7 +4,7 @@ function parsedata(req: fodderlist) {
   if (isNullOrUndefined(req)) {
     console.log(req);
   }
-  return 'okk';
+  return 'ok';
 }
 export interface fodderlist {
   id: string;
